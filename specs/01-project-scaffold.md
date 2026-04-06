@@ -1,5 +1,22 @@
 # Spec 01 — Project Scaffold
 
+## About the App
+
+**Learn Lang** is a minimalist, AI-driven web application for language learning. It is built around the **Ilya Frank Reading Method** — a technique where target-language text is interleaved with literal translations in brackets, allowing learners to absorb vocabulary and grammar organically through reading rather than rote memorization.
+
+### Key concepts
+- **Learning Stack**: A personal feed of user-uploaded content (pasted text, PDFs, images via OCR, YouTube transcripts) that gets AI-adapted into the Frank reading format.
+- **SRS Flashcards**: Words discovered during reading are automatically added to a spaced-repetition deck (SM-2 algorithm) for long-term retention.
+- **Grammar Roadmap**: The system passively tracks grammar patterns encountered in texts and lets users prove mastery through AI-generated tests.
+- **Suggest Translation**: A quick-access tool where users type a native-language phrase and receive multiple target-language variations (literal → idiomatic).
+
+### Supported languages
+- **Target (learnable)**: English, Dutch
+- **Native (UI / translations)**: English, Dutch, Russian
+
+### Target users
+Private beta — invite-only via email allowlist to manage AI API costs. No public sign-up.
+
 ## Goal
 Set up the mono-repo structure with a runnable Next.js frontend, FastAPI backend, PostgreSQL database, and Docker Compose orchestration. After this spec is complete a developer can run `docker compose up` and see both services healthy.
 
